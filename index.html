@@ -176,10 +176,8 @@
 
 
 <!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/mwpqrdqv"
-  method="POST"
->
+<!-- <form
+  action="https://formspree.io/f/mwpqrdqv" method="POST">
    <section class="contact" id="contact">
   <h2 class="heading">Contact <span>Me!</span></h2>
   <form id="contact-form">
@@ -196,9 +194,25 @@
     
   </form>
 </section>
-  <!-- your other form fields go here -->
   <button type="submit">Send</button>
-</form>
+</form> -->
+
+  <section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me!</span></h2>
+  <form action="https://formspree.io/f/mwpqrdqv" method="POST">
+    <div class="input-box">
+      <input type="text" id="name" name="name" placeholder="Full Name" required>
+      <input type="email" id="email" name="email" placeholder="Email Address" required>
+    </div>
+    <div class="input-box">
+      <input type="tel" id="phone" name="phone" placeholder="Mobile Number" required>
+      <input type="text" id="subject" name="subject" placeholder="Email Subject" required>
+    </div>
+    <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    <input type="submit" value="Send Message" class="btn">
+  </form>
+</section>
+
 
   
 
@@ -264,5 +278,6 @@
 
 
 </html>
+
 
 
